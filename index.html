@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image to image test</title>
+
+    <style type="text/css">
+
+        .image_placeholder {
+            width: 960px;
+            height: 576px;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="image-uncover.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#ic-container').coverImage({
+                ic_param_bkg_image: 'images/wall.jpg',
+                ic_param_cover_image: 'images/cover.jpg',
+                ic_param_pieces_x: 32,
+                ic_param_pieces_y: 32
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+<h1>Image Uncover test</h1>
+
+<div id="ic-container" class="image_placeholder"></div>
+
+</body>
+</html>
